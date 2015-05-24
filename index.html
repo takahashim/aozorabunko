@@ -17,11 +17,29 @@ td.header { text-align: left; vertical-align: top; border-style: solid; border-w
 td.subheader { text-align: right; vertical-align: top; border-style: solid; border-width: 1px; border-color: #d3d3d3 }
 td.summary { text-align: left; vertical-align: top; border-style: solid; border-width: 1px; border-color: #d3d3d3 }
 th { border: solid; border-width: 1px 0 1px 0; border-color: #000063 }
+#watermark {
+    position:fixed;
+    z-index:0;
+    display:block;
+    left:200px;
+    min-height:50%;
+    min-width:50%;
+}
+center {
+    position:absolute;
+    z-index:1;
+}
+#bgtext {
+    color:lightgrey;
+    font-size:120px;
+    transform:rotate(340deg);
+    -webkit-transform:rotate(340deg);
+}
 -->
 </style>
 </head>
 <body text="#000000" bgcolor="#ffffff" link="#0000ff" vlink="#00008b" alink="#ff0000">
-
+<div id="watermark"><p id="bgtext">テスト版</p></div>
 <center>
 
 <!-- navigation -->
